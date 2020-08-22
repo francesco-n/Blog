@@ -1,0 +1,38 @@
+[32mCos'e' un clog?[0m
+
+Un clog (curl blog) e' un blog costruito per essere letto tramite curl da terminale!
+Non posso certo prendermi il merito dell'idea, il primo clog 
+e' nato grazie a James Chip, e si trova qui:
+
+http://www.jameschip.io/clog/index
+
+Thanks James!
+
+L'idea nasce da un problema sempre più dilagante: i siti sono sempre più pesanti, complice anche la maggiore velocità delle connessioni internet nell'ultimo decennio.
+Anzichè avere un sito in cui ogni pagina pesa 10MB e oltre, un clog permette di tornare alla versione più semplice possibile di quello che dovrebbe essere un blog: nient'altro che testo e idee!
+
+[32mCome ne creo uno?[0m
+
+Per ora, devi solo mettere nel tuo sito, da qualche parte, una cartella chiamata "clog", contenente una pagina index e delle pagine numerate per gli articoli, tutte senza estensione.
+
+Nel file index inserisci una lista con tutti i post, con accanto un indice numerico corrispondente al nome del file nella stessa cartella contente l'articolo.
+
+Arriveranno altri post! 
+
+         _nnnn_                      
+        dGGGGMMb     ,"""""""""""""".
+       @p~qp~~qMb    | Linux Rules! |
+       M|@||@) M|   _;..............'
+       @,----.JM| -'
+      JS^\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' hjm
+

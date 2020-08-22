@@ -1,0 +1,21 @@
+#monociclo {
+	max-width:210px;
+	display:block;
+	margin:auto;
+	
+}
+
+#chisono {
+	min-height: 20em;
+}
+
+#wheatley {
+	max-width: 500px;
+	display: block;
+	margin: auto;
+
+
+}
+@media screen and (max-width: 800px) {
+	#monociclo {float:none;width:50%;margin:auto;}
+}

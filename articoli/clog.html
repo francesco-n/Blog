@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-language" content="it-it">
+	<meta name="viewport" content="width=device-width, initial-stale=1.0">
+	<meta name="description" content="Clog: un blog leggibile tramite curl">
+	<link rel="stylesheet" type="text/css" href="/css/template.css">
+	<link rel="stylesheet" type="text/css" href="/css/articolo.css">
+	<title>Clog - FraBlog</title>
+</head>
+<body>
+	<?php include "../templates/header.php"; ?>
+	
+	<div class="riga">
+		<div class="container">
+			<h1>Clog: blog minimale leggibile tramite curl</h1>
+			<p>Ok, questa è una di quelle cose decisamente poco utili che mi piacciono tanto.</p>
+			<p>Guardandomi intorno nel social <a href="https://joinmastodon.org/">mastodon</a> mi sono imbattuto in un toot di <a href="https://boardgames.social/users/big_chip/remote_follow">James Chip</a>, in cui scrive di aver creato un piccolo blog leggibile tramite curl direttamente da terminale: da qui il nome "<strong>clog</strong>" (curl + blog).<br>
+			L'idea mi è piaciuta immediatamente, e mi sono fiondato a replicare l'idea sul mio server: se utilizzi linux (e dovresti) puoi anche leggere il contenuto del mio clog utilizzando il comando</p>
+			<code class="codice">curl -Ls francesconegriolli.com/clog/index</code>
+			<img src="images/clog/clog1.jpg" alt="il mio clog">
+			<p>Molto probabilmente questa idea non avrà un grande successo, ma il concetto alla base resta valido: <strong>less is more</strong>.</p>
+			<p>Non è necessario avere un sito estremamente complicato per condividere le proprie idee, alla fine i concetti fondamentali restano confinati nella parte testuale di un blog! Quindi perchè non scriverne uno in cui viene eliminato ogni elemento non essenziale, salvando solamente il succo del discorso?</p>
+			<p>Certo, quasi nessuno leggerebbe un intero blog scritto in questo modo "arcaico". Ma come ho detto, ho trovato interessante l'idea e mi ci sono buttato: in questo, come in altri casi, l'utilità viene messa in secondo piano, favorendo la voglia di smanettare.</p>
+
+			<h2>Come crearne uno</h2>
+			<p>Se anche tu vuoi unirti alla rivulozione dei clog, è sufficiente aggiungere al tuo sito una cartella <i>clog</i>, contenente un file <i>index</i> e tanti file numerati quanti saranno i tuoi articoli, senza nessuna estensione.</p>
+			<p>L'indice conterrà le istruzioni per l'utilizzo, e una lista di articoli, ognuno con il proprio ID, corrispondente al nome del file contenente l'articolo in questione.</p>
+			<p>In questo modo, per accedere al clog sarà sufficiente usare il comando</p>
+			<code>curl -Ls iltuosito.com/clog/index</code>
+			<p>e per accedere agli articoli</p>
+			<code>curl -Ls iltuosito.com/clog/ID_articolo </code>
+		</div>
+	</div>
+
+	<?php include "../templates/footer.php"; ?>
+</body>
+</html>

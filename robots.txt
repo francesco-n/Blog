@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /template.html
+Disallow: /frablog_pubkey.asc
+Disallow: /templates/*
+Disallow: /blog/template.html
