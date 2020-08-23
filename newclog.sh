@@ -23,16 +23,19 @@ then
 			sed -e 's/<h[1-9][^>]*>/\o033[32m/' \
 	    		-e 's/<\/h[1-9]>/\o033[0m/' \
 	    		-e 's/<strong>/\o033[4m/' \
-	    		-e 's/<\/strong>/\o033[0m/' | \
-	    		sed '/<\/p>/ a\
-			' | sed 's/<[^>]*>//g')
+	    		-e 's/<\/strong>/\o033[0m/' \
+	    		-e '/<\/p>/ a\
+			'  \
+			-e '/<br>/ a\
+			' | \
+			sed 's/<[^>]*>//g')
 		printf "$TESTO" >> clog/$FILE_COUNT
 	fi
 else
 	printf "\e[32m%s\e[0m\n\n" $TITLE >> clog/$FILE_COUNT
 fi
 
-printf "\t%s:\t%s\n" $FILE_COUNT $TITLE >> clog/index
+printf "\t%s:\t%s\n" $FILE_COUNT "$TITLE" >> clog/index
 vim clog/$FILE_COUNT
 
 printf "Creato post numero %s\n" $FILE_COUNT
