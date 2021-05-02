@@ -1,3 +1,3 @@
 <footer>
-	<p>Autore: <strong>Francesco Negriolli</strong></p>
+	<p>Autore: <strong>GiocoliereMentale</strong></p>
 </footer>
